@@ -1,0 +1,46 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :::p, par t:::p {seq l {comp label2:::p:84:p, space :::p, comp textUserName::::136:x}, seq t {comp buttonLogin::::104:x, space u:::p, comp buttonCancel:::p:110:p}, seq {comp label3:::p:63:p, space :p:27:p, comp textPassword:::::x}}}, seq l {space :p:32:p, comp label1:::p:191:p}}, space ::21:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, space s:::p, par b {comp label2::b:p::p, comp textUserName::b:p::p}, space :p:15:p, par b {comp textPassword::b:p::p, comp label3::b:p::p}, space s:::p, par l {comp buttonCancel:::p::p, comp buttonLogin:::p::p}, space ::15:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "BANK OF PĂUȘANIA"
+				"font": new java.awt.Font( "Segoe UI", 0, 12 )
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Password:"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buttonLogin"
+				"text": "Login"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonLoginActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buttonCancel"
+				"text": "Cancel"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonCancelActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textUserName"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textPassword"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "User name:"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 110, 55 )
+			"size": new java.awt.Dimension( 255, 210 )
+		} )
+	}
+}
